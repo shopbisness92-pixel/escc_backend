@@ -1,28 +1,18 @@
-<<<<<<< HEAD
 {
-    "builds":[{
-        "src":"escc_backend/wsgi.py",
-        "use": "@vercel/python",
-        "confifg":{"maxLambdaSize": "15mb","runtime": "python3.12.6"}
-    }],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest": "escc_backend/wsgi.py"
-        }
-    ]
-=======
-{
-    "builds":[{
-        "src":"escc_backend/wsgi.py",
-        "use": "@vercel/python",
-        "confifg":{"maxLambdaSize": "15mb","runtime": "python3.12.6"}
-    }],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest": "escc_backend/wsgi.py"
-        }
-    ]
->>>>>>> db10e5ef20a7e0293aa4275ab1c6357019f9d8ee
+  "builds": [
+    {
+      "src": "escc_backend/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.12"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "escc_backend/wsgi.py"
+    }
+  ]
 }
