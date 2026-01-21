@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 asgiref==3.11.0
 certifi==2026.1.4
 cffi==2.0.0
@@ -18,7 +17,7 @@ numpy==2.4.0
 packaging==25.0
 pandas==2.3.3
 pillow==12.0.0
-psycopg2==2.9.11
+psycopg2-binary==2.9.11
 pycparser==2.23
 PyJWT==2.10.1
 python-dateutil==2.9.0.post0
@@ -34,40 +33,3 @@ tzdata==2025.3
 unicorn==2.1.4
 urllib3==2.6.3
 whitenoise==6.11.0
-=======
-asgiref==3.11.0
-certifi==2026.1.4
-cffi==2.0.0
-charset-normalizer==3.4.4
-cryptography==46.0.3
-dj-database-url==3.0.1
-dj-rest-auth==7.0.2
-Django==5.2.10
-django-allauth==65.13.1
-django-cors-headers==4.9.0
-djangorestframework==3.16.1
-djangorestframework_simplejwt==5.5.1
-gunicorn==23.0.0
-idna==3.11
-joblib==1.5.3
-numpy==2.4.0
-packaging==25.0
-pandas==2.3.3
-pillow==12.0.0
-psycopg2==2.9.11
-pycparser==2.23
-PyJWT==2.10.1
-python-dateutil==2.9.0.post0
-pytz==2025.2
-reportlab==4.4.7
-requests==2.32.5
-scikit-learn==1.8.0
-scipy==1.16.3
-six==1.17.0
-sqlparse==0.5.5
-threadpoolctl==3.6.0
-tzdata==2025.3
-unicorn==2.1.4
-urllib3==2.6.3
-whitenoise==6.11.0
->>>>>>> db10e5ef20a7e0293aa4275ab1c6357019f9d8ee
