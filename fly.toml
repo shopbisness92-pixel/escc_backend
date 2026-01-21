@@ -1,0 +1,29 @@
+app = "escc-backend"
+primary_region = "ORD"
+
+[build]
+  image = "python:3.12"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+  SECRET_KEY = "django-insecure-e_47)yb%7o1*(^w3+4wea0u=xa4&yv#qodz^)_0w#wq5#9pd!e"
+  DEBUG = "False"
+  DATABASE_URL = "postgres://user:password@host:port/dbname"
+
+[[services]]
+  internal_port = 8000
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [[services.tcp_checks]]
+    interval = 10000
+    timeout = 2000
+    grace_period = "1s"
+    port = 8000
